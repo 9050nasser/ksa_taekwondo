@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{full_name}-{group_name}-{employee}",
+ "creation": "2024-03-11 04:15:22.129464",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tk_group",
+  "column_break_swnk",
+  "group_name",
+  "section_break_bity",
+  "employee",
+  "passport_no",
+  "dob",
+  "column_break_hssn",
+  "full_name",
+  "group",
+  "section_break_eyrh",
+  "table_wfly",
+  "remarks_section",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "tk_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "TK Group",
+   "options": "TK Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_swnk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "tk_group.group_name",
+   "fieldname": "group_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Group Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_bity",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.tk_group",
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_hssn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.group",
+   "fetch_if_empty": 1,
+   "fieldname": "group",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Group",
+   "options": "\n\u0631\u0626\u064a\u0633 \u0648\u0641\u062f\n\u0627\u062f\u0627\u0631\u0649\n\u0627\u0639\u0644\u0627\u0645\u0649\n\u0645\u062f\u0631\u0628\n\u0645\u0633\u0627\u0639\u062f \u0645\u062f\u0631\u0628\n\u0627\u062e\u0635\u0627\u0626\u0649 \u0639\u0644\u0627\u062c\n\u0644\u0627\u0639\u0628\n\u0645\u0648\u0638\u0641",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_eyrh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_wfly",
+   "fieldtype": "Table",
+   "options": "Employee Route Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Route",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "employee.passport_number",
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Passport no",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.date_of_birth",
+   "fieldname": "dob",
+   "fieldtype": "Data",
+   "label": "DOB",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-11 16:36:12.664814",
+ "modified_by": "Administrator",
+ "module": "Ksa Taekwondo",
+ "name": "Employee Route",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-08 00:13:37.507773",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "agenda"
+ ],
+ "fields": [
+  {
+   "fieldname": "agenda",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Agenda",
+   "options": "Agenda"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-08 00:13:56.558632",
+ "modified_by": "Administrator",
+ "module": "Ksa Taekwondo",
+ "name": "Meeting agenda",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

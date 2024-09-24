@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-08-08 00:14:08.165496",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "is_expense_claim",
+  "meeting_information_section",
+  "meeting_name",
+  "meeting_place",
+  "column_break_4",
+  "meeting_no",
+  "meeting_date",
+  "participants_section",
+  "participants",
+  "agenda_section",
+  "meeting_agenda",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "meeting_information_section",
+   "fieldtype": "Section Break",
+   "label": "Meeting Information"
+  },
+  {
+   "fieldname": "meeting_name",
+   "fieldtype": "Data",
+   "label": "Meeting Name"
+  },
+  {
+   "fieldname": "meeting_place",
+   "fieldtype": "Link",
+   "label": "Meeting Place",
+   "options": "Location"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "meeting_no",
+   "fieldtype": "Data",
+   "label": "Meeting No"
+  },
+  {
+   "fieldname": "meeting_date",
+   "fieldtype": "Datetime",
+   "label": "Meeting Date"
+  },
+  {
+   "fieldname": "participants_section",
+   "fieldtype": "Section Break",
+   "label": "Participants"
+  },
+  {
+   "fieldname": "participants",
+   "fieldtype": "Table",
+   "label": "Participants",
+   "options": "Participants"
+  },
+  {
+   "fieldname": "agenda_section",
+   "fieldtype": "Section Break",
+   "label": "Agenda"
+  },
+  {
+   "fieldname": "meeting_agenda",
+   "fieldtype": "Table",
+   "label": "Meeting agenda",
+   "options": "Meeting agenda"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Minutes of Meeting",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "MEET-.YYYY.-.####"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "is_expense_claim",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "is_expense_claim",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "group": "Create",
+   "link_doctype": "Expense Claim",
+   "link_fieldname": "minutes_of_meeting"
+  }
+ ],
+ "modified": "2023-09-12 12:57:42.339087",
+ "modified_by": "Administrator",
+ "module": "Ksa Taekwondo",
+ "name": "Minutes of Meeting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

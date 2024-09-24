@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ksa_taekwondo *.css
+recursive-include ksa_taekwondo *.csv
+recursive-include ksa_taekwondo *.html
+recursive-include ksa_taekwondo *.ico
+recursive-include ksa_taekwondo *.js
+recursive-include ksa_taekwondo *.json
+recursive-include ksa_taekwondo *.md
+recursive-include ksa_taekwondo *.png
+recursive-include ksa_taekwondo *.py
+recursive-include ksa_taekwondo *.svg
+recursive-include ksa_taekwondo *.txt
+recursive-exclude ksa_taekwondo *.pyc

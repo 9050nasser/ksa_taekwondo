@@ -1,0 +1,85 @@
+{
+ "charts": [
+  {
+   "chart_name": "\u0627\u0646\u0648\u0627\u0639 \u0627\u0644\u0637\u0644\u0628\u0627\u062a",
+   "label": "\u0627\u0646\u0648\u0627\u0639 \u0627\u0644\u0637\u0644\u0628\u0627\u062a"
+  },
+  {
+   "chart_name": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0637\u0644\u0628\u0627\u062a",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0637\u0644\u0628\u0627\u062a"
+  },
+  {
+   "chart_name": "\u0627\u0644\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0645\u062a\u0623\u062e\u0631\u0629",
+   "label": "\u0627\u0644\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0645\u062a\u0623\u062e\u0631\u0629"
+  },
+  {
+   "chart_name": "\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646",
+   "label": "\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646"
+  },
+  {
+   "chart_name": "\u0645\u0639\u062f\u0644",
+   "label": "\u0645\u0639\u062f\u0644"
+  }
+ ],
+ "content": "[{\"id\":\"1cpABaWhFO\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">request</span>\",\"col\":12}},{\"id\":\"LsI2pIMvLc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Requests\",\"col\":4}},{\"id\":\"K9h6k7DKG9\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0637\u0644\u0628\u0627\u062a \u062c\u0645\u064a\u0639 \u0627\u0644\u0627\u0642\u0633\u0627\u0645\",\"col\":4}},{\"id\":\"Hk_Zde6boj\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0637\u0644\u0628\u0627\u062a \u062e\u062f\u0645\u0629 \u0627\u0644\u0639\u0645\u0644\u0627\u0621\",\"col\":4}},{\"id\":\"isp1-ej1kx\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0637\u0644\u0628\u0627\u062a \u0642\u0633\u0645 \u0627\u0644\u0627\u0646\u062a\u0627\u062c\",\"col\":4}},{\"id\":\"6raPwEfNz0\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0637\u0644\u0628\u0627\u062a \u0642\u0633\u0645 \u0627\u0644\u062a\u0633\u0648\u064a\u0642\",\"col\":4}},{\"id\":\"UtrApHy9SY\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0637\u0644\u0628\u0627\u062a \u0642\u0633\u0645 \u0627\u0644\u0639\u0645\u0644\u064a\u0627\u062a\",\"col\":4}},{\"id\":\"PCZ7xyT-1h\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u0637\u0644\u0628\u0627\u062a \u0642\u0633\u0645 \u0627\u0644\u0645\u0628\u064a\u0639\u0627\u062a\",\"col\":4}},{\"id\":\"9uMRnuKdq1\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u0627\u0646\u0648\u0627\u0639 \u0627\u0644\u0637\u0644\u0628\u0627\u062a\",\"col\":12}},{\"id\":\"ngjqbYp2NM\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0637\u0644\u0628\u0627\u062a\",\"col\":12}},{\"id\":\"IWg2LZwtAY\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u0627\u0644\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0645\u062a\u0623\u062e\u0631\u0629\",\"col\":12}},{\"id\":\"STE95U8pkE\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646\",\"col\":12}},{\"id\":\"pzzdox7uVd\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u0645\u0639\u062f\u0644\",\"col\":12}}]",
+ "creation": "2024-07-10 13:02:58.475224",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "message",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Request",
+ "links": [],
+ "modified": "2024-09-24 22:34:28.917828",
+ "modified_by": "Administrator",
+ "module": "Internal System",
+ "name": "Request",
+ "number_cards": [
+  {
+   "label": "\u0637\u0644\u0628\u0627\u062a \u062c\u0645\u064a\u0639 \u0627\u0644\u0627\u0642\u0633\u0627\u0645",
+   "number_card_name": "\u0637\u0644\u0628\u0627\u062a \u062c\u0645\u064a\u0639 \u0627\u0644\u0627\u0642\u0633\u0627\u0645"
+  },
+  {
+   "label": "\u0637\u0644\u0628\u0627\u062a \u062e\u062f\u0645\u0629 \u0627\u0644\u0639\u0645\u0644\u0627\u0621",
+   "number_card_name": "\u0637\u0644\u0628\u0627\u062a \u062e\u062f\u0645\u0629 \u0627\u0644\u0639\u0645\u0644\u0627\u0621"
+  },
+  {
+   "label": "\u0637\u0644\u0628\u0627\u062a \u0642\u0633\u0645 \u0627\u0644\u0627\u0646\u062a\u0627\u062c",
+   "number_card_name": "\u0637\u0644\u0628\u0627\u062a \u0642\u0633\u0645 \u0627\u0644\u0627\u0646\u062a\u0627\u062c"
+  },
+  {
+   "label": "\u0637\u0644\u0628\u0627\u062a \u0642\u0633\u0645 \u0627\u0644\u062a\u0633\u0648\u064a\u0642",
+   "number_card_name": "\u0637\u0644\u0628\u0627\u062a \u0642\u0633\u0645 \u0627\u0644\u062a\u0633\u0648\u064a\u0642"
+  },
+  {
+   "label": "\u0637\u0644\u0628\u0627\u062a \u0642\u0633\u0645 \u0627\u0644\u0639\u0645\u0644\u064a\u0627\u062a",
+   "number_card_name": "\u0637\u0644\u0628\u0627\u062a \u0642\u0633\u0645 \u0627\u0644\u0639\u0645\u0644\u064a\u0627\u062a"
+  },
+  {
+   "label": "\u0637\u0644\u0628\u0627\u062a \u0642\u0633\u0645 \u0627\u0644\u0645\u0628\u064a\u0639\u0627\u062a",
+   "number_card_name": "\u0637\u0644\u0628\u0627\u062a \u0642\u0633\u0645 \u0627\u0644\u0645\u0628\u064a\u0639\u0627\u062a"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "Requests",
+   "link_to": "Requests",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Request"
+}

@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-15 01:54:49.090969",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "inside_ksa",
+  "outside_ksa"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Expense Claim Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "inside_ksa",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Inside KSA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "outside_ksa",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Outside KSA",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-15 01:54:49.090969",
+ "modified_by": "Administrator",
+ "module": "Ksa Taekwondo",
+ "name": "Business travel allowance",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

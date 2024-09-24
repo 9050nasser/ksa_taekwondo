@@ -1,0 +1,175 @@
+
+<style>
+    * {
+            margin:0;
+            padding:0;
+            direction:rtl;
+        }
+        .print-format {
+            padding:0in;
+            
+        }
+    .header {
+        display:flex; 
+        flex-direction:column;
+        justify-content:center;
+        margin: 0px 20px;
+    }
+    .under-header {
+        display: flex;
+    flex-direction: revert;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .esm-algeha {
+        margin-top:30px;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    table, th, td , th{
+        border:2px solid black;
+        border-collapse:collapse;
+        text-align:center;
+        white-space: nowrap;
+
+    }
+    .print-format th {
+        color:black;
+            text-align:center;
+            font-weight:bold;
+            background-color:lightgray;
+            white-space: nowrap;
+
+    
+    }
+    .print-format td {
+        padding: 4px !important;
+        white-space: nowrap;
+    }
+    .break {
+        flex-basis: 100%;
+        height: 0;
+      }
+      .column1 {
+        border-left: 2px solid black;
+      }
+    .table1 {
+        margin-top:5px;
+        margin-right:20px;
+        margin-left:20px;
+        display:flex; 
+        flex-direction:column;
+    
+    }
+
+.header-box {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    /* padding: 2px; */    /* width: 90%; */
+    /* margin-bottom: 20px; */
+    margin: 10px 20px;
+}
+.sec-three {
+    
+    /* border-right: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 98%;
+    font-size: 11pt;
+    font-weight: bold;
+    /* padding: 7pt; */
+
+
+}
+    </style>
+    {% var numbers = ({"0":"٠","1":"١","2": "٢", "3":"٣", "4":"٤", "5":"٥", "6":"٦", "7":"٧", "8":"٨", "9":"٩"}) %}
+
+    {% var pageNumber = 0 %}
+    {% var months = ["يناير", "فبراير", "مارس", "ابريل", "مايو", "يونيو", "يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر", "ديسمبر"]%}
+    
+<div class="header">
+
+    <div class="under-header">
+        <div>
+            <img style="    width: 250px;
+            height: 100px;" src="/files/e_red.png">
+        </div>
+        
+    <div style="    font-weight: bold;
+    font-size: large;">
+        دلـــــيل خــــــط الســــــير
+    </div>
+    <div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div style="border:2px solid black; width:100px; text-align:center; margin-left:10px;margin-right:10px; font-weight:bold;">
+                <div style="font-weight: bold;">تاريخ الطباعة  </div>
+                {% let date = [] %}
+                {% [...frappe.datetime.str_to_user(frappe.datetime.get_datetime_as_string()).toString()].forEach((item, idx, array)=>{ %}
+                    {% date.push(numbers[item] ? numbers[item] : item  ) %}
+                {% }) %}                
+                {%= date.join("") %}
+                <br>
+                الطباعة بواسطة
+                {{data[0].cur_user}}
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</div>
+
+
+
+
+{% var counter = 1 %}
+
+
+<div class="table1">
+        <table style="font-family:Cairo" dir="rtl">
+            <thead>
+                <tr>
+                    <th>Sr</th>
+                    <th>Employee Route</th>
+                    <th>Employee</th>
+                    <th>Employee Full Name</th>
+                    <th>Passport no</th>
+                    <th>Group</th>
+                    <th>Date of Birth</th>
+                    <th>Location</th>
+                    <th>Check In</th>
+                    <th>Check Out</th>
+         
+    
+                </tr>
+            </thead>
+            <tbody>
+                {% for(var i=0, f=data.length -1; i<f; i++) { %}
+
+                <tr>
+                   
+                    <td>
+                        {%= (i+1) %}
+                    </td>
+                    
+                    <td>{%= data[i].employee_route %}</td>
+                    <td>{%= data[i].employee %}</td>
+                    <td>{%= data[i].full_name %}</td>
+                    <td>{%= data[i].passport_no %}</td>
+                    <td>{%= data[i].group %}</td>
+                    <td>{%= data[i].dob %}</td>
+                    <td>{%= data[i].location %}</td>
+                    <td>{%= data[i].departure %}</td>
+                    <td>{%= data[i].check_out %}</td>
+
+
+                </tr>
+                {% } %}
+
+            </tbody>
+        </table>
+    </div>

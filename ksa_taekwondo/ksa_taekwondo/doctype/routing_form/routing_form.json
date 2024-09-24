@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-04-28 23:55:56.147395",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "subject",
+  "naming_series",
+  "column_break_4",
+  "departure",
+  "return",
+  "amended_from",
+  "routing_details_section",
+  "routing_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming series",
+   "options": "RF-.YYYY.-"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "departure",
+   "fieldtype": "Date",
+   "label": "Departure"
+  },
+  {
+   "fieldname": "return",
+   "fieldtype": "Date",
+   "label": "Return"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Routing Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "routing_details_section",
+   "fieldtype": "Section Break",
+   "label": "Routing Details"
+  },
+  {
+   "fieldname": "routing_details",
+   "fieldtype": "Table",
+   "label": "Routing Details",
+   "options": "Routing Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-04-29 01:29:15.304677",
+ "modified_by": "Administrator",
+ "module": "Ksa Taekwondo",
+ "name": "Routing Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

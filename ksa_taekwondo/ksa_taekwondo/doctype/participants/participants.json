@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-08 00:10:14.196622",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "participant",
+  "participant_name",
+  "has_meeting_rewored",
+  "position"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fetch_from": "participant.employee_name",
+   "fieldname": "participant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Participant Name",
+   "read_only": 1
+  },
+  {
+   "columns": 3,
+   "fetch_from": "participant.designation",
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Position",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "participant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Participant",
+   "options": "Employee"
+  },
+  {
+   "default": "0",
+   "fetch_from": "position.has_meeting_rewoed",
+   "fieldname": "has_meeting_rewored",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "HAS MEETING REWORED",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-12 12:56:12.680356",
+ "modified_by": "Administrator",
+ "module": "Ksa Taekwondo",
+ "name": "Participants",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
